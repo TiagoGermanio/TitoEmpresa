@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TitoEmpresa</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Titos Casas</string>
+    <string name="nav_header_subtitle">TiagoGermanio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_downloads">DownLoads</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_anotacoes">Anotações</string>
+    <string name="menu_pedrapapeltesoura">Pedra Papel Tesoura</string>
+    <string name="menu_bancodedados">Banco de dados</string>
+    <string name="menu_sugestao">Sugestão</string>
+    <string name="menu_sobre">Sobre</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

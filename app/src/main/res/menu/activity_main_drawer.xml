@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_anotacoes"
+            android:icon="@drawable/ic_menu_notas"
+            android:title="@string/menu_anotacoes" />
+        <item
+            android:id="@+id/nav_pedrapapeltesoura"
+            android:icon="@drawable/ic_menu_jogo"
+            android:title="@string/menu_pedrapapeltesoura" />
+        <item
+            android:id="@+id/nav_bancodedados"
+            android:icon="@drawable/ic_menu_banco"
+            android:title="@string/menu_bancodedados" />
+
+        <item android:title="outros">
+        <menu>
+            <item
+                android:id="@+id/nav_sugestao"
+                android:icon="@drawable/ic_menu_sugestao"
+                android:title="@string/menu_sugestao" />
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/ic_menu_sobre"
+                android:title="@string/menu_sobre" />
+
+        </menu>
+        </item>
+    </group>
+</menu>

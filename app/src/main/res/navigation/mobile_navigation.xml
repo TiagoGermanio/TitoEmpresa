@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.titoempresa.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_anotacoes"
+        android:name="com.example.titoempresa.ui.anotacoes.BlocoNotas"
+        android:label="@string/menu_anotacoes"
+        tools:layout="@layout/fragment_bloco_notas" />
+    <fragment
+        android:id="@+id/nav_bancodedados"
+        android:name="com.example.titoempresa.ui.bancoDeDados.BancoDeDados"
+        android:label="@string/menu_bancodedados"
+        tools:layout="@layout/fragment_banco_de_dados" />
+
+    <fragment
+        android:id="@+id/nav_sugestao"
+        android:name="com.example.titoempresa.ui.sugestao.Sugestao"
+        android:label="@string/menu_sugestao"
+        tools:layout="@layout/fragment_trabalhe_conosco" />
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="com.example.titoempresa.ui.sobre.Sobre"
+        android:label="@string/menu_sobre"
+        tools:layout="@layout/fragment_sobre" />
+    <fragment
+        android:id="@+id/nav_pedrapapeltesoura"
+        android:name="com.example.titoempresa.ui.Jogo.PedraPapelTesouraFragment"
+        android:label="@string/menu_pedrapapeltesoura"
+        tools:layout="@layout/fragment_pedra_papel_tesoura" />
+</navigation>

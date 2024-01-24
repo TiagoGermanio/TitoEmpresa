@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/testTest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEFE"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagemEscolhida"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultado"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/btnPapel"
+        android:layout_width="127dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/papel"
+        android:onClick="selectPapel"
+        android:text="papel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnPedra"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPedra"
+        android:layout_width="127dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/pedra"
+        android:onClick="selectPedra"
+        android:text="pedra"
+        android:textColorLink="#F1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnTesoura"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPapel" />
+
+    <Button
+        android:id="@+id/btnTesoura"
+        android:layout_width="127dp"
+        android:layout_height="127dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/tesoura"
+        android:onClick="selectTesoura"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="248dp"
+        android:text="RESULTADO "
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="17dp"
+        android:text="Adversário"
+        app:layout_constraintBottom_toTopOf="@+id/imagemAdversario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagemAdversario"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/textResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
